@@ -12,6 +12,6 @@ class pnt_decode_Test extends \PHPUnit\FrameWork\TestCase {
 
         $decoded_message = pnt_decode( $message, $dictionary );
 
-        $this->assertEquals( 'La cible a quitté son nid.', $decoded_message );
+        $this->assertEquals( 'La cible a quitté son domicile.', $decoded_message );
     }
 }
