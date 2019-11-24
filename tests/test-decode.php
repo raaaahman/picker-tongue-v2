@@ -18,8 +18,8 @@ class pnt_decode_Test extends \PHPUnit\FrameWork\TestCase {
     public function test_decode_message_without_dictionary() {
         $message = 'Comment est votre blanquette?';
 
-        $decoded_message = pnt_decode( $message );
+        $this->expectException( ArgumentCountError::class );
 
-        $this->assertEquals( 'Comment est votre blanquette?', $decoded_message );
+        $decoded_message = pnt_decode( $message );
     }
 }
